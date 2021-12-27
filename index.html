@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Documento</title>
+</head>
+<body>
+    Produto:<input id="produto" type="text" placeholder="Produto"><br>
+    Valor:<input id="valor" type="text" placeholder="Valor"><br>
+    Data da Compra:<input id="data_compra" type="date" placeholder="data_compra"><br>
+    Tipo:
+        <select id="tipo" type="text">
+            <option value="horti-fruti">Horti-fruti</option>        
+            <option value="mercearia">Merccearia</option>
+            <option value="acougue">Açougue</option>
+            <option value="bazar">Bazar</option>
+        </select>
+        <br>
+        <button id="btn-guardar" type="button" onclick="guardar()">Guardar</button>
+        <button id="btn-atualizar" type="button" onclick="atualizar()" style="display:none">Atualizar</button>
+        <button type="button" onclick="limpar()">Limpa</button>
+        <hr>
+        <table id="tabela-produtos">
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Valor</th>
+                    <th>Data</th>
+                    <th>Tipo</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <!--<td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><button type="button">X</button></td>
+                -->
+                </tr>
+            </tbody>
+        </table>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="js/controlador.js"></script>
+</body>
+</html>
